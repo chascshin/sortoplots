@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.2.1/ol.css">
 </head>
 <body>
-    <div class="header">Интерактивная карта урожайности по данным сортоучастков Пермского края</div>
+    <div class="header">Продуктивность культур на государственных сортоучастках Пермского края</div>
     <div class="container">
         <div class="layers"><h3>Панель слоев</h3>
         <label>
@@ -20,14 +20,25 @@
         <input type="checkbox" id="toggleWMS_ZU" checked> Расположение сортоучастков <img class="img14" src="./point.png">
         </label><br>
         <br>
+        <h3 class="crop">озимая рожь</h3>
         <label>
-            <input type="checkbox" id="toggleWMS_arenda_ne_isp" checked> Озимая рожь (Вятка-2)
+            <input type="checkbox" id="toggleWMS_arenda_ne_isp" checked> сорт "Вятка 2"
         </label><br><br>
         <label>
-            <input type="checkbox" id="toggleWMS_arenda_isp"> Озимая рожь (Кировская-89)
+            <input type="checkbox" id="toggleWMS_arenda_isp"> сорт "Кировская 89"
         </label><br><br>
         <label>
-            <input type="checkbox" id="toggleWMS_pole"> Озимая рожь (Фаленская-4)
+            <input type="checkbox" id="toggleWMS_pole"> сорт "Фаленская 4"
+        </label><br><br>
+        <h3 class="crop">яровая пшеница</h3>
+        <label>
+            <input type="checkbox" id="toggleWMS_arenda_ne_isp"> сорт "Иргина"
+        </label><br><br>
+        <label>
+            <input type="checkbox" id="toggleWMS_arenda_isp"> сорт "Горноуральская"
+        </label><br><br>
+        <label>
+            <input type="checkbox" id="toggleWMS_pole"> сорт "Красноуфимская 100"
         </label><br><br>    
         <p class="par11">Базовые карты:</p>
         <label>
@@ -45,7 +56,7 @@
        
         <div class="sidebar">
             <div class="sidebar-top">
-                <h3>Легенда</h3>
+                <h3>Легенда<br><br><br>урожайность в т/га</h3>
                 <div id="attributes"><img class="img7" src="./legend.png" alt=""></div>
             </div>
         
