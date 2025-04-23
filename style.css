@@ -120,39 +120,6 @@ h3 {
     margin-left: 0px;
 }
 
-/* Стили для кнопки */
-
-.Q {
-    padding: 10px 0;
-    border-color: black;
-    border-radius: 4px;
-    background-color: rgba(12, 112, 244, 0.893);
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.Q:hover {
-    background-color: #061e7c;
-}
-/* Отключаем стандартные стили для ссылок внутри кнопки */
-button a {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: inherit; /* Наследуем цвет от кнопки */
-    font-size: inherit; /* Наследуем размер шрифта */
-}
-/*это панелька формы выбора районов*/
-.sidebar-middle {
-    position: fixed;
-    height: 30%;
-    width: 278px;
-    background: #ffffff;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid black;
-    margin-right: 3px;
-    margin-top: 215px;
-}
 
 .sidebar-middle select,
 .sidebar-middle button {
@@ -209,4 +176,8 @@ footer {
     color: #fff;
     padding: 10px;
     margin: 0;
+}
+.crop{
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
