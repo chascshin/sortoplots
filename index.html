@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сортоучастки</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.2.1/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.2.1/ol.css">
+</head>
+<body>
+    <div class="header">Продуктивность культур на государственных сортоучастках Пермского края</div>
+    <div class="container">
+        <div class="layers"><h3>Панель слоев</h3>
+        <label>
+            <input type="checkbox" id="toggleWMS_pk" checked> Пермский край  <img class="img" src="./boarder.png">
+        </label><br>
+       <br>
+       <label>
+        <input type="checkbox" id="sortoplods" checked> Расположение сортоучастков <img class="img14" src="./point.png">
+        </label><br>
+        <br>
+        <h3 class="crop">озимая рожь</h3>
+        <label>
+            <input type="checkbox" id="toggleWMS_vyatka2" checked> сорт "Вятка 2"
+        </label><br><br>
+        <label>
+            <input type="checkbox" id="toggleWMS_kirovskaya"> сорт "Кировская 89"
+        </label><br><br>
+        <label>
+            <input type="checkbox" id="toggleWMS_falen"> сорт "Фаленская 4"
+        </label><br><br>
+        <h3 class="crop">яровая пшеница</h3>
+        <label>
+            <input type="checkbox" id="toggleWMS_irgina"> сорт "Иргина"
+        </label><br><br>
+        <label>
+            <input type="checkbox" id="toggleWMS_gornoural"> сорт "Горноуральская"
+        </label><br><br>
+        <label>
+            <input type="checkbox" id="toggleWMS_krasnoufimsk"> сорт "Красноуфимская 100"
+        </label><br><br>    
+        <p class="par11">Базовые карты:</p>
+        <label>
+            <input type="checkbox" checked> Картографическая основа <spain style="font-size: 14px;">(ESRI Gray)</spain>
+        </label><br>
+        <label>
+            <input type="checkbox"> Космоснимок
+        </label><br>
+        </div>
+        <div id="map" class="map">            
+        </div>
+       
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <h3>Легенда<br><br><br>урожайность в т/га</h3>
+                <div id="attributes"><img class="img7" src="./legend.png" alt=""></div>
+            </div>
+        
+
+        </div>
+    <div class="bottom-panel">
+        <div id="controls">
+            <label for="yearRange">годы</label>
+            <div class="timeline">
+            <input type="range" id="yearRange" min="2006" max="2018" value="2006" step="1">
+            <div id="yearLabels"></div>
+            </div>
+        </div>
+        <footer><p>&copy; 2025 ФГБОУ ВО Пермский ГАТУ</p></footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="./borders.js"></script>
+</body>
+</html>
