@@ -36,3 +36,11 @@ const pointsLayer = new ol.layer.Vector({
 // Добавляем оба слоя на карту
 map.addLayer(borderLayer); // Добавление слоя с границами
 map.addLayer(pointsLayer); // Добавление слоя с точками
+// Обработчик включения/выключения слоя Пермский край
+document.getElementById('toggleWMS_pk').addEventListener('change', function () {
+  borderLayer.setVisible(this.checked); // граница края
+});
+// Обработчик включения/выключения слоя Местоположения точек где госсортокампания
+document.getElementById('sortoplods').addEventListener('change', function () {
+  pointsLayer.setVisible(this.checked); // граница края
+});
